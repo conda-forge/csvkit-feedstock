@@ -14,9 +14,9 @@ Summary: A suite of command-line tools for working with CSV, the king of tabular
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmpwo32b6gf-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmpwo32b6gf-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmpwo32b6gf-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmpwo32b6gf-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmpwo32b6gf-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmpwo32b6gf-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/csvkit-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/csvkit-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/csvkit-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/csvkit-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/csvkit-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/csvkit-feedstock/branch/master)
 
 Current release info
 ====================
