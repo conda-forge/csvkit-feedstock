@@ -1,8 +1,8 @@
 {%set name = "csvkit" %}
-{%set version = "1.0.1" %}
+{%set version = "1.0.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "046bc6e71e6892b4d244f8702786354e28ca6002814d460d99659d6ad8e7bcd1" %}
+{%set hash_val = "5a897f87c920dec3e7debc31102dfe774a8d704641bfafa98e04729bd4d26e17" %}
 {%set build_num = "0" %}
 
 package:
