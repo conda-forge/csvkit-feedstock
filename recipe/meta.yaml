@@ -1,8 +1,8 @@
 {% set name = "csvkit" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "5a897f87c920dec3e7debc31102dfe774a8d704641bfafa98e04729bd4d26e17" %}
+{% set hash = "a6c859c1321d4697dc41252877249091681297f093e08d9c1e1828a6d52c260c" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - csvclean = csvkit.utilities.csvclean:launch_new_instance
