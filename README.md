@@ -14,14 +14,15 @@ Summary: A suite of command-line tools for working with CSV, the king of tabular
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/csvkit-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/csvkit-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/csvkit-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/csvkit-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/csvkit-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/csvkit-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/csvkit-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/csvkit-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/csvkit/badges/version.svg)](https://anaconda.org/conda-forge/csvkit)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/csvkit/badges/downloads.svg)](https://anaconda.org/conda-forge/csvkit)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-csvkit-green.svg)](https://anaconda.org/conda-forge/csvkit) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/csvkit.svg)](https://anaconda.org/conda-forge/csvkit) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/csvkit.svg)](https://anaconda.org/conda-forge/csvkit) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/csvkit.svg)](https://anaconda.org/conda-forge/csvkit) |
 
 Installing csvkit
 =================
