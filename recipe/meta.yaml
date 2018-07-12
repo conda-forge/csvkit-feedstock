@@ -3,7 +3,6 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "a6c859c1321d4697dc41252877249091681297f093e08d9c1e1828a6d52c260c" %}
-{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -11,12 +10,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - csvclean = csvkit.utilities.csvclean:launch_new_instance
     - csvcut = csvkit.utilities.csvcut:launch_new_instance
@@ -34,9 +34,9 @@ build:
     - sql2csv = csvkit.utilities.sql2csv:launch_new_instance
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
