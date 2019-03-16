@@ -1,8 +1,8 @@
 {% set name = "csvkit" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "a6c859c1321d4697dc41252877249091681297f093e08d9c1e1828a6d52c260c" %}
+{% set hash = "1353a383531bee191820edfb88418c13dfe1cdfa9dd3dc46f431c05cd2a260a0" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
