@@ -1,22 +1,17 @@
-{% set name = "csvkit" %}
-{% set version = "1.0.3" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "a6c859c1321d4697dc41252877249091681297f093e08d9c1e1828a6d52c260c" %}
+{% set version = "1.0.4" %}
 
 package:
-  name: {{ name|lower }}
+  name: csvkit
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.org/packages/source/c/csvkit/csvkit-{{ version }}.tar.gz
+  sha256: 1353a383531bee191820edfb88418c13dfe1cdfa9dd3dc46f431c05cd2a260a0
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - csvclean = csvkit.utilities.csvclean:launch_new_instance
     - csvcut = csvkit.utilities.csvcut:launch_new_instance
@@ -37,7 +32,6 @@ requirements:
   host:
     - python
     - pip
-
   run:
     - python
     - setuptools
@@ -52,7 +46,6 @@ test:
     - csvkit
     - csvkit.convert
     - csvkit.utilities
-
   commands:
     - csvclean --help
     - csvcut --help
@@ -74,7 +67,7 @@ about:
   license_file: COPYING
   license: MIT
   license_family: MIT
-  summary: 'A suite of command-line tools for working with CSV, the king of tabular file formats.'
+  summary: 'A suite of command-line tools for working with CSV, the king of tabular file formats'
   dev_url: https://github.com/wireservice/csvkit
   doc_url: https://csvkit.rtfd.org/
 
