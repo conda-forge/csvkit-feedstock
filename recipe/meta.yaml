@@ -9,7 +9,7 @@ source:
   sha256: 1353a383531bee191820edfb88418c13dfe1cdfa9dd3dc46f431c05cd2a260a0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
@@ -30,10 +30,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - setuptools
     - agate >=1.6.0
     - agate-excel >=0.2.1
@@ -74,3 +74,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
