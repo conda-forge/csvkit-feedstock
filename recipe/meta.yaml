@@ -1,17 +1,18 @@
-{% set version = "1.0.4" %}
+{% set name = "csvkit" %}
+{% set version = "1.0.5" %}
 
 package:
-  name: csvkit
+  name: c{{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/csvkit/csvkit-{{ version }}.tar.gz
-  sha256: 1353a383531bee191820edfb88418c13dfe1cdfa9dd3dc46f431c05cd2a260a0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7bd390f4d300e45dc9ed67a32af762a916bae7d9a85087a10fd4f64ce65fd5b9
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - csvclean = csvkit.utilities.csvclean:launch_new_instance
     - csvcut = csvkit.utilities.csvcut:launch_new_instance
@@ -61,6 +62,9 @@ test:
     - csvstat --help
     - in2csv --help
     - sql2csv --help
+    - pip check 
+  requires:
+    - pip
 
 about:
   home: https://csvkit.rtfd.org/
