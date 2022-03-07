@@ -1,5 +1,5 @@
 {% set name = "csvkit" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c8f761b5605cc978a7515a3d6a9e7ceec49a08eeefd7ad78480dea5f8bf80d35
+  sha256: 0019e29ccadfe3d5cb0d159a443cba3ce8dfc37c967317db983ce3f19f0ca050
 
 build:
   number: 0
