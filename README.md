@@ -1,11 +1,11 @@
-About csvkit
-============
+About csvkit-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/csvkit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://csvkit.rtfd.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/csvkit-feedstock/blob/main/LICENSE.txt)
 
 Summary: A suite of command-line tools for working with CSV, the king of tabular file formats
 
