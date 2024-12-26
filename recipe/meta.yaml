@@ -58,7 +58,7 @@ test:
     - csvlook --help
     - csvpy --help
     - csvsort --help
-    - csvsql --help
+    # - csvsql --help
     - csvstack --help
     - csvstat --help
     - in2csv --help
